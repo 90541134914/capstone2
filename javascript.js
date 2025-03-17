@@ -1,4 +1,4 @@
-const apiKey = 'PvYmhMKGT6qHMlZbtpgOqQSY275QF26mViTq7du6';  // You can get your own API key from: https://api.nasa.gov/
+const apiKey = 'OphSm7GnYeqMRTgSgUBfUnjHkLu082ZIwM2VdH3N';  // You can get your own API key from: https://api.nasa.gov/
 
 function fetchAPOD() {
     const date = document.getElementById("date-input").value;
@@ -7,7 +7,7 @@ function fetchAPOD() {
         return;
     }
     
-    const url = https://api.nasa.gov/planetary/apod?date=${date}&api_key=${apiKey};
+    const url = `https://api.nasa.gov/planetary/apod?date=${date}&api_key=${apiKey}`;
     
     fetch(url)
         .then(response => response.json())
